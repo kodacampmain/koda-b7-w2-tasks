@@ -1,4 +1,4 @@
-import { filterManual, mapManual } from "./builtInMethod.js";
+import {filterManual,mapManual} from "./builtInMethod.js";
 import {cetakTabel} from "./cetakTabel.js";
 import countArray from "./countArray.js";
 
