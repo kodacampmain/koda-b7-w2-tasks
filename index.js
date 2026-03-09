@@ -70,10 +70,11 @@ console.log("===========================================");
   } catch (error) {
     console.log(error.message);
   }
-  // Failed
   try {
-    const changes = fakhri.cashier("250_000", "375_000");
-    console.log(changes);
+    const count = ali.countArray([1,2,3,4,5]);
+    const countEdgeCase = ali.countArray([1,2,3,4,5,"abc"]);
+    console.log(count);
+    console.log(countEdgeCase);
   } catch (error) {
     console.log(error.message);
   }
