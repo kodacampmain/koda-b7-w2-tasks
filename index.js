@@ -562,7 +562,7 @@ console.log("===========================================");
     if(element % 2 === 0){
       return element;
     }
-};  
+};
 
   const callbackFnMap = (element,index,array) =>{
     return element * 2;
