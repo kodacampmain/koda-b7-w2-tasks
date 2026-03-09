@@ -117,7 +117,7 @@ console.log("===========================================");
   } catch (error) {
     console.log(error.message);
   }
-
+  
 })();
 console.log("===========================================");
 
@@ -183,7 +183,7 @@ console.log("===========================================");
   } catch (error) {
     console.log(error.message);
   }
-
+  
 })();
 console.log("===========================================");
 /**
@@ -213,7 +213,7 @@ console.log("===========================================");
   } catch (err) {
     console.log(err.message);
   }
-
+  
   // Failed 2: Param 2 is not a Function
   try {
     const task1a = angga.manualMap([1,2,3], "not a function");
@@ -241,7 +241,7 @@ console.log("===========================================");
   } catch (err) {
     console.log(err.message);
   }
-
+  
   // Failed 2: Param 2 is not a Function
   try {
     const task1b = angga.manualFilter([1,2,3,4,5,6,7,8,9,10], "not a function");
@@ -303,7 +303,7 @@ import rafi from "./tasks/rafi/index.js";
 console.log("===========================================");
 (function taskRafi() {
 
-
+  
   //manual map
   // Success
   console.log("-----Manual Map Program------");
@@ -466,7 +466,7 @@ console.log("===========================================");
   } catch (error) {
     console.log(error.message);
   }
-
+  
 })();
 console.log("===========================================");
 
@@ -547,7 +547,7 @@ console.log("===========================================");
   } catch (error) {
     console.log(error.message);
   }
-
+  
 })();
 console.log("===========================================");
 
@@ -565,7 +565,7 @@ console.log("===========================================");
     if(element % 2 === 0){
       return element;
     }
-};
+};  
 
   const callbackFnMap = (element,index,array) =>{
     return element * 2;
@@ -710,6 +710,5 @@ try {
     console.log(error.message);
   }
 })();
+
 console.log("===========================================");
-
-
