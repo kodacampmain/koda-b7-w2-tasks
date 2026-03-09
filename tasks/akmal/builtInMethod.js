@@ -1,9 +1,9 @@
 export function mapManual(daftarHarga) { // lakukan export untuk function map
-  console.log('===========================================');
-  console.log('BuiltInMethod');
-  console.log(`Map`);
+  console.log("===========================================");
+  console.log("BuiltInMethod");
+  console.log("Map");
   const hargaSetelahDiskon = []; // Wadah untuk hasil baru
-  console.log(`Menghitung Diskon 15 %`);
+  console.log("Menghitung Diskon 15 %");
   console.log(daftarHarga);
   // Proses manual menggunakan for loop
   for (let i = 0; i < daftarHarga.length; i++) {
@@ -13,14 +13,13 @@ export function mapManual(daftarHarga) { // lakukan export untuk function map
     // Masukkan ke array baru
     hargaSetelahDiskon[i] = hitungHarga;
   }
-  console.log('Hasil');
+  console.log("Hasil");
 
   return hargaSetelahDiskon;
 }
 
 export function filterManual(siswa) { // lakukan export untuk function filter
-  console.log(`Filter`);
-  let hasil = '';
+  console.log("Filter");
   //lakukan perulangan sebanyak panjang array pada parameter siswa
   for (let i = 0; i < siswa.length; i++) {
     //memfilter apakah array pada objek skor memilki nilai >= 60, jika iya cetak array
