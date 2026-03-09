@@ -2,7 +2,6 @@
 // const price = 250_000;
 // const money = 275_000;
 
-const cardinaNumber = [1,2,3,4,5,6,7,8,9,10]
 
 
 export function countArray(arr){
@@ -10,9 +9,6 @@ export function countArray(arr){
 
 
 }
-
-
-constcountArray(cardinaNumber)
 
 // function myFunction(num) {
 //   return num * 10;
