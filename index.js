@@ -128,23 +128,53 @@ console.log("===========================================");
 import vando from "./tasks/rivando/index.js";
 
 (function taskVando() {
+
+  // Success
+  // manual map Membuat Tulisan uppercase
 try {
   const user = ["budi", "siti", "agus"];
-  const userKapital = custMap(user, (nama) => nama.toUpperCase());
+  const userKapital = vando.custMap(user, (nama) => nama.toUpperCase());
   console.log("Hasil Map (Kapital):", userKapital);
 } catch (error) {
   console.log(error.message);
 }
+
+// Failed
+try {
+  const dataBukanArray = null;
+  const hasil = vando.custMap(dataBukanArray, (item) => item.toUpperCase());
+
+  console.log(hasil);
+} catch (error) {
+  console.log("Error Log:", error.message);
+  // Output: Error Log: Gagal: Argumen pertama harus berupa Array!
+}
+
+  // Success
+  // manual filter Mengambil angka genap saja
 try {
   const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // Contoh: Mengambil angka yang genap saja
-  const angkaGenap = custFilter(angka, (item) => item % 2 === 0);
+  const angkaGenap = vando.custFilter(angka, (item) => item % 2 === 0);
   console.log("Hasil Filter (Genap):", angkaGenap);
   } catch (error) {
   console.log(error.message);
   }
+
+// Failed
+try {
+  const inputSalah = "12345";
+  const angkaGenap = custFilter(inputSalah, (item) => item % 2 === 0);
+
+  console.log(angkaGenap);
+} catch (error) {
+  console.log("Error Log:", error.message);
+}
+
+    // Success
+    // membuat tabel perkalian 5 dari 1 sampai 10
   try {
-    const tabelPerkalian = vando.cetakTabel(10);
+    const tabelPerkalian = vando.cetakTabel(5);
     console.log(tabelPerkalian);
   } catch (error) {
     console.log(error.message);
@@ -156,8 +186,8 @@ try {
   } catch (error) {
     console.log(error.message);
   }
-  // Counting Changes Nominal
   // Success
+  // menghitung perkalian semua array
   try {
     const hitungArray = vando.countArray([1, 2 , 5]);
     console.log(hitungArray);
@@ -166,7 +196,7 @@ try {
   }
   // Failed
   try {
-    const hitungArray = vando.countArray(["a", "2" , "5"]);
+    const hitungArray = vando.countArray(["a", "b" , "c"]);
     console.log(hitungArray);
   } catch (error) {
     console.log(error.message);
