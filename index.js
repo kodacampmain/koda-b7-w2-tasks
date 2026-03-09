@@ -3,7 +3,6 @@
  */
 
 import fakhri from "./tasks/fakhri/index.js";
-import ali from "./tasks/ali/index.js";
 
 console.log("===========================================");
 // Use IIFE here
@@ -125,7 +124,7 @@ console.log("===========================================");
 /**
  * Task Ali
  */
-
+import ali from "./tasks/ali/index.js";
 (function taskAli() {
   const data = [1,2,3,4,5];
   const data2 = "string";
