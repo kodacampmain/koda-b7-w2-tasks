@@ -186,8 +186,6 @@ console.log("===========================================");
   
 })();
 console.log("===========================================");
-
-console.log("===========================================");
 /**
  * Task Angga
  */
@@ -569,9 +567,9 @@ console.log("===========================================");
     }
 };  
 
-const callbackFnMap = (element,index,array) =>{
-  return element * 2;
-};
+  const callbackFnMap = (element,index,array) =>{
+    return element * 2;
+  };
 //Success
   try {
     const manualMap = ali.manualBuilInMap(data,callbackFnMap);
