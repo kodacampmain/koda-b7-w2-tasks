@@ -475,14 +475,14 @@ console.log("===========================================");
 
   (function akmalTask() {
   try {
-    const belanja = [24000, 11000, 30000]
+    const belanja = [24000, 11000, 30000];
     const map = akmal.mapManual(belanja);
     console.log(map);
   } catch (error) {
     console.log(error.message);
   }
     try {
-    const belanja = [24000, 11000,"saka"]
+    const belanja = [24000, 11000,"saka"];
     const map = akmal.mapManual(belanja);
     console.log(map);
   } catch (error) {
@@ -490,12 +490,12 @@ console.log("===========================================");
   }
   try {
     const nilai = [
-  { nama: 'Rendi', skor: 85 },
-  { nama: 'Budi', skor: 50 },
-  { nama: 'Cici', skor: 60 },
-  { nama: 'Rudi', skor: 55 },
-  { nama: 'Tasya', skor: 90 },
-  { nama: 'lusi', skor: 92 }
+  { nama: "Rendi", skor: 85 },
+  { nama: "Budi", skor: 50 },
+  { nama: "Cici", skor: 60 },
+  { nama: "Rudi", skor: 55 },
+  { nama: "Tasya", skor: 90 },
+  { nama: "lusi", skor: 92 }
   ];
     akmal.filterManual(nilai);
   } catch (error) {
