@@ -1,31 +1,33 @@
-export function mapManual(daftarHarga) { // lakukan export untuk function map
+export function mapManual(array, callback) { // lakukan export untuk function map
   console.log("===========================================");
   console.log("BuiltInMethod");
   console.log("Map");
-  const hargaSetelahDiskon = []; // Wadah untuk hasil baru
-  console.log("Menghitung Diskon 15 %");
-  console.log(daftarHarga);
-  // Proses manual menggunakan for loop
-  for (let i = 0; i < daftarHarga.length; i++) {
-    const hargaSekarang = daftarHarga[i];
-    // Logika perubahannya
-    const hitungHarga = hargaSekarang + hargaSekarang * 0.15;
-    // Masukkan ke array baru
-    hargaSetelahDiskon[i] = hitungHarga;
+
+  const hasilMap = []; // Wadah untuk hasil baru
+  // Proses manual menggunakan for loop dengan sesuai panjang array
+  for (let i = 0; i < array.length; i++) {
+    //jalankan fungsi perubahan callback pada tiap elemen
+    const hasilProses = callback(array[i], i, array);
+    // masukkan hasil ke wadah baru
+    hasilMap[i] = hasilProses;
   }
   console.log("Hasil");
-
-  return hargaSetelahDiskon;
+  //kembalikan ke array baru
+  return hasilMap;
 }
 
-export function filterManual(siswa) { // lakukan export untuk function filter
+export function filterManual(array, callback) { // lakukan export untuk function filter
   console.log("Filter");
-  //lakukan perulangan sebanyak panjang array pada parameter siswa
-  for (let i = 0; i < siswa.length; i++) {
-    //memfilter apakah array pada objek skor memilki nilai >= 60, jika iya cetak array
-    if (siswa[i].skor >= 60) {
-      console.log(siswa[i]);
+  const hasil = []; // Wadah untuk hasil baru
+  let posisi = 0;
+  //lakukan perulangan sebanyak panjang array pada parameter array
+  for (let i = 0; i < array.length; i++) {
+    //menyimpan ke elemen array sementara 
+    if (callback(array[i])) {
+      hasil[posisi] = array[i];
+      posisi++;
     }
   }
+  return hasil;
 }
 
