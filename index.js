@@ -154,4 +154,22 @@ console.log("===========================================");
   } catch (err) {
     console.log(err.message);
   }
+
+  // Success Task 3
+  try {
+    const task3a = angga.countArray([1,2,3,4,5]);
+    const task3b = angga.countArray([2,2,2,2,2]);
+    console.log(task3a);
+    console.log(task3b);
+  } catch (err) {
+    console.log(err.message);
+  }
+
+  // Failed Task 3
+  try {
+    const task3 = angga.countArray([1,2,3,4,"asd"]);
+    console.log(task3);
+  } catch (err) {
+    console.log(err.message);
+  }
 })();
