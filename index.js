@@ -50,10 +50,9 @@ console.log("===========================================");
 // Use IIFE here
 
 (function taskNaufal() {
-
   // manual Map function
-   try {
-    const arr = [1,2,3,4,5];
+  try {
+    const arr = [1, 2, 3, 4, 5];
     const timesByTwo = naufal.manualMap(arr, (n) => n * 2);
     console.log(timesByTwo);
   } catch (error) {
@@ -69,8 +68,8 @@ console.log("===========================================");
   }
 
   // manual Filter function
-   try {
-    const arr = [1,2,3,4,5,6];
+  try {
+    const arr = [1, 2, 3, 4, 5, 6];
     const evenNumbers = naufal.manualFilter(arr, (n) => n % 2 === 0);
     console.log(evenNumbers);
   } catch (error) {
@@ -104,7 +103,7 @@ console.log("===========================================");
   // countArray
   // Success
   try {
-    const arr = [1,2,3,4,5];
+    const arr = [1, 2, 3, 4, 5];
     const countArray = naufal.countArray(arr);
     console.log(countArray);
   } catch (error) {
@@ -117,7 +116,6 @@ console.log("===========================================");
   } catch (error) {
     console.log(error.message);
   }
-  
 })();
 console.log("===========================================");
 
@@ -134,7 +132,7 @@ console.log("===========================================");
   // Tugas 1 map dan filter dwiki
   // Success
   try {
-    const angka = [1,2,3];
+    const angka = [1, 2, 3];
     const hasil = dwiki.manualMap(angka, (item) => item * 2);
 
     console.log(hasil);
@@ -146,7 +144,7 @@ console.log("===========================================");
   }
   // Failed
   try {
-    const arrBaru = dwiki.manualMap(1,2,3,4,5);
+    const arrBaru = dwiki.manualMap(1, 2, 3, 4, 5);
     console.log(arrBaru);
     const hasil = dwiki.manualFilter(12, 5, 8, 130, 44);
     console.log(hasil);
@@ -171,19 +169,18 @@ console.log("===========================================");
   // Tugas 3 count Array dwiki
   // Succes
   try {
-    const hasil = dwiki.countArray([1,2,3,4,5]);
+    const hasil = dwiki.countArray([1, 2, 3, 4, 5]);
     console.log(hasil);
   } catch (error) {
     console.log(error.message);
   }
   // Failed
   try {
-    const hasil = dwiki.countArray(1,2,3,4,5);
+    const hasil = dwiki.countArray(1, 2, 3, 4, 5);
     console.log(hasil);
   } catch (error) {
     console.log(error.message);
   }
-  
 })();
 console.log("===========================================");
 /**
@@ -196,7 +193,7 @@ console.log("===========================================");
 (function taskAngga() {
   // Success Task 1a
   try {
-    const task1a = angga.manualMap([1,2,3], function (n) {
+    const task1a = angga.manualMap([1, 2, 3], function (n) {
       return n * 10;
     });
     console.log(task1a);
@@ -213,10 +210,10 @@ console.log("===========================================");
   } catch (err) {
     console.log(err.message);
   }
-  
+
   // Failed 2: Param 2 is not a Function
   try {
-    const task1a = angga.manualMap([1,2,3], "not a function");
+    const task1a = angga.manualMap([1, 2, 3], "not a function");
     console.log(task1a);
   } catch (err) {
     console.log(err.message);
@@ -224,9 +221,12 @@ console.log("===========================================");
 
   // Success Task 1b
   try {
-    const task1b = angga.manualFilter([1,2,3,4,5,6,7,8,9,10], function (n) {
-      return n % 2 === 0;
-    });
+    const task1b = angga.manualFilter(
+      [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      function (n) {
+        return n % 2 === 0;
+      },
+    );
     console.log(task1b);
   } catch (err) {
     console.log(err.message);
@@ -241,10 +241,13 @@ console.log("===========================================");
   } catch (err) {
     console.log(err.message);
   }
-  
+
   // Failed 2: Param 2 is not a Function
   try {
-    const task1b = angga.manualFilter([1,2,3,4,5,6,7,8,9,10], "not a function");
+    const task1b = angga.manualFilter(
+      [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "not a function",
+    );
     console.log(task1b);
   } catch (err) {
     console.log(err.message);
@@ -276,8 +279,8 @@ console.log("===========================================");
 
   // Success Task 3
   try {
-    const task3a = angga.countArray([1,2,3,4,5]);
-    const task3b = angga.countArray([2,2,2,2,2]);
+    const task3a = angga.countArray([1, 2, 3, 4, 5]);
+    const task3b = angga.countArray([2, 2, 2, 2, 2]);
     console.log(task3a);
     console.log(task3b);
   } catch (err) {
@@ -286,7 +289,7 @@ console.log("===========================================");
 
   // Failed Task 3
   try {
-    const task3 = angga.countArray([1,2,3,4,"asd"]);
+    const task3 = angga.countArray([1, 2, 3, 4, "asd"]);
     console.log(task3);
   } catch (err) {
     console.log(err.message);
@@ -302,16 +305,14 @@ import rafi from "./tasks/rafi/index.js";
 
 console.log("===========================================");
 (function taskRafi() {
-
-  
   //manual map
   // Success
   console.log("-----Manual Map Program------");
   try {
-    const arr =  [1,2,3,4,5];
+    const arr = [1, 2, 3, 4, 5];
     const timesByTwo = rafi.manualMap(arr, (n) => n * 2);
     console.log(timesByTwo);
-  }catch(error) {
+  } catch (error) {
     console.error(error.message);
   }
 
@@ -320,7 +321,7 @@ console.log("===========================================");
     const arr = 5;
     const timesByTwo = rafi.manualMap(arr, (n) => n * 2);
     console.log(timesByTwo);
-  } catch(error){
+  } catch (error) {
     console.error(error.message);
   }
 
@@ -328,10 +329,10 @@ console.log("===========================================");
   //manual filter
   // Success
   try {
-    const arr = [1,2,3,4,5];
+    const arr = [1, 2, 3, 4, 5];
     const takeGenap = rafi.manualFilter(arr, (n) => n % 2 === 0);
     console.log(takeGenap);
-  } catch(error) {
+  } catch (error) {
     console.error(error.message);
   }
 
@@ -340,7 +341,7 @@ console.log("===========================================");
     const arr = "Bukan array";
     const takeGenap = rafi.manualFilter(arr, (n) => n % 2 === 0);
     console.log(takeGenap);
-  } catch(error){
+  } catch (error) {
     console.error(error.message);
   }
 
@@ -349,7 +350,7 @@ console.log("===========================================");
   // Success
   try {
     rafi.cetakTable(3);
-  } catch(error){
+  } catch (error) {
     console.error(error.message);
   }
 
@@ -357,7 +358,7 @@ console.log("===========================================");
   // Failed
   try {
     rafi.cetakTable("abc");
-  } catch(error){
+  } catch (error) {
     console.error(error.message);
   }
 
@@ -365,9 +366,9 @@ console.log("===========================================");
   // Count Array
   // Success
   try {
-    const hasilCount = rafi.countArray([1,2,3,4,5]);
+    const hasilCount = rafi.countArray([1, 2, 3, 4, 5]);
     console.log(hasilCount);
-  } catch(error) {
+  } catch (error) {
     console.error(error.message);
   }
 
@@ -375,7 +376,7 @@ console.log("===========================================");
   try {
     const hasilCount = rafi.countArray(123);
     console.log(hasilCount);
-  } catch(error){
+  } catch (error) {
     console.error(error.message);
   }
 })();
@@ -391,12 +392,11 @@ console.log("===========================================");
 // Use IIFE here
 
 (function taskAqil() {
-
   // manual Map function
   try {
     const angka = [5, 10, 15];
     const hasilMap = aqil.manualMap(angka, function (item) {
-        return item + 1;
+      return item + 1;
     });
     console.log("Hasil Map:", hasilMap);
   } catch (error) {
@@ -406,18 +406,18 @@ console.log("===========================================");
   try {
     const data = 2;
     const hasil = aqil.manualMap(data, function (item) {
-        return item + 1;
+      return item + 1;
     });
     console.log("Hasil Map:", hasil);
-} catch (error) {
+  } catch (error) {
     console.log("ManualMap Failed:", error.message);
-}
+  }
   // manual Filter function
   // success
   try {
     const angka = [5, 10, 15, 20];
     const hasilFilter = aqil.manualFilter(angka, function (item) {
-        return item > 10;
+      return item > 10;
     });
     console.log("Hasil Filter:", hasilFilter);
   } catch (error) {
@@ -425,22 +425,22 @@ console.log("===========================================");
   }
   // Failed
   try {
-  const angka = 3;
-  const hasilFilter = aqil.manualFilter(angka, function (item) {
-    return item > 10;
-  });
-  console.log("Hasil Filter:", hasilFilter);
+    const angka = 3;
+    const hasilFilter = aqil.manualFilter(angka, function (item) {
+      return item > 10;
+    });
+    console.log("Hasil Filter:", hasilFilter);
   } catch (error) {
-  console.log("ManualFilter Failed:", error.message);
+    console.log("ManualFilter Failed:", error.message);
   }
 
   // cetakTabel
   // Success
   try {
-  const angka = 5;
-  aqil.cetakTabel(angka);
+    const angka = 5;
+    aqil.cetakTabel(angka);
   } catch (error) {
-  console.log("Multiplication Table Failed:", error.message);
+    console.log("Multiplication Table Failed:", error.message);
   }
   // Failed
   try {
@@ -453,7 +453,7 @@ console.log("===========================================");
   // countArray
   // Success
   try {
-    const arr = [1,2,3,4,5];
+    const arr = [1, 2, 3, 4, 5];
     const countArray = aqil.countArray(arr);
     console.log(countArray);
   } catch (error) {
@@ -466,10 +466,8 @@ console.log("===========================================");
   } catch (error) {
     console.log(error.message);
   }
-  
 })();
 console.log("===========================================");
-
 
 /**
  * Task Hanif
@@ -481,10 +479,9 @@ console.log("===========================================");
 // Use IIFE here
 
 (function taskHanif() {
-
   // manual Map function
-   try {
-    const arr = [1,2,3,4,5];
+  try {
+    const arr = [1, 2, 3, 4, 5];
     const timesByTen = hanif.manualMap(arr, (n) => n * 10);
     console.log(timesByTen);
   } catch (error) {
@@ -500,8 +497,8 @@ console.log("===========================================");
   }
 
   // manual Filter function
-   try {
-    const arr = [1,2,3,4,5,6];
+  try {
+    const arr = [1, 2, 3, 4, 5, 6];
     const evenNumbers = hanif.manualFilter(arr, (n) => n % 2 === 0);
     console.log(evenNumbers);
   } catch (error) {
@@ -535,7 +532,7 @@ console.log("===========================================");
   // countArray
   // Success
   try {
-    const arr = [1,2,3,4,5];
+    const arr = [1, 2, 3, 4, 5];
     const countArray = hanif.countArray(arr);
     console.log(countArray);
   } catch (error) {
@@ -548,7 +545,6 @@ console.log("===========================================");
   } catch (error) {
     console.log(error.message);
   }
-  
 })();
 console.log("===========================================");
 /**
@@ -562,68 +558,68 @@ console.log("===========================================");
   try {
     // manualMap
     // success
-    const data = [1,2,3,4,5]
-    const tomanualMap = ilham.manualMap(data,(num)=>num*num);
-    console.log(tomanualMap)
-  } catch (error){
-    console.log(error.message)
+    const data = [1, 2, 3, 4, 5];
+    const tomanualMap = ilham.manualMap(data, (num) => num * num);
+    console.log(tomanualMap);
+  } catch (error) {
+    console.log(error.message);
   }
   try {
     // error
     const data = "2";
-    const toManualMap = ilham.manualMap(data,(num)=>num*num);
-    console.log(toManualMap)
-  } catch (error){
-    console.log(error.message)
+    const toManualMap = ilham.manualMap(data, (num) => num * num);
+    console.log(toManualMap);
+  } catch (error) {
+    console.log(error.message);
   }
   try {
     // manualFilter
     // success
-    const data = [1,2,3,4,5];
-    const toManualFilter = ilham.manualFilter(data,(num)=>num % 2 === 0);
-    console.log(toManualFilter)
-  } catch(error) {
-    console.log(error.message)
+    const data = [1, 2, 3, 4, 5];
+    const toManualFilter = ilham.manualFilter(data, (num) => num % 2 === 0);
+    console.log(toManualFilter);
+  } catch (error) {
+    console.log(error.message);
   }
   try {
     // Failed
     const data = "1";
-    const toManualFilter = ilham.manualFilter(data,(num)=>num % 2 === 0);
-    console.log(toManualFilter)
+    const toManualFilter = ilham.manualFilter(data, (num) => num % 2 === 0);
+    console.log(toManualFilter);
   } catch (error) {
-    console.log(error.message)
+    console.log(error.message);
   }
   try {
     // cetakTable
     // success
-    const toTable = ilham.cetakTable(10)
-    console.log(toTable)
-  }catch (error) {
-    console.log(error.message)
+    const toTable = ilham.cetakTable(10);
+    console.log(toTable);
+  } catch (error) {
+    console.log(error.message);
   }
   try {
     // failed
-    const tabel = ilham.cetakTable("abc")
-    console.log(tabel)
-  }catch (error){
-    console.log(error.message)
+    const tabel = ilham.cetakTable("abc");
+    console.log(tabel);
+  } catch (error) {
+    console.log(error.message);
   }
   try {
     // count Array
     // success
-    const datanum = [1,2,3,4,5];
-    const toCount = ilham.countArray(datanum)
-    console.log(toCount)
-  }catch (error){
-    console.log(error.message)
-  } 
+    const datanum = [1, 2, 3, 4, 5];
+    const toCount = ilham.countArray(datanum);
+    console.log(toCount);
+  } catch (error) {
+    console.log(error.message);
+  }
   try {
     // failed
     const data = "abb";
-    const toCount = ilham.countArray(data)
-    console.log(toCount)
-  } catch(error) {
-    console.log(error.message)
+    const toCount = ilham.countArray(data);
+    console.log(toCount);
+  } catch (error) {
+    console.log(error.message);
   }
-})()
+})();
 console.log("===========================================");
