@@ -61,14 +61,14 @@ console.log("===========================================");
   // Success
   try {
     const hitungArray = vando.countArray([25, 37 , 40]);
-    console.log(changes);
+    console.log(hitungArray);
   } catch (error) {
     console.log(error.message);
   }
   // Failed
   try {
     const hitungArray = vando.countArray(["25", "37" , "40"]);
-    console.log(changes);
+    console.log(hitungArray);
   } catch (error) {
     console.log(error.message);
   }
