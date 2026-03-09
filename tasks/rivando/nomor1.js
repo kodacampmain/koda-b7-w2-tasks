@@ -9,21 +9,20 @@ const produk = [
 
 function cusArr(arr, callback) {
   const hasil = [];
-  arr.forEach(element => {
-    if (callback(element)){
-      hasil.push(element);
+  for (let i = 0; i < arr.length; i++) {
+    if (callback(arr[i])){
+      hasil = [...hasil,arr[i] ];
     }
-  });
+  }
   return hasil;
 }
 
 function cusMap(arr, callback) {
   const hasil = [];
 
-  arr.forEach(element => {
-    const itemTransformasi = callback(element);
-    hasil.push(itemTransformasi);
-  });
-
+  for (let i = 0; i < arr.length; i++) {
+      const itemTransformasi = callback(arr[i]);
+      hasil = [...hasil, itemTransformasi ];
+    }
   return hasil;
 }
