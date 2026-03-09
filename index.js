@@ -60,14 +60,14 @@ console.log("===========================================");
   // Counting Changes Nominal
   // Success
   try {
-    const hitungArray = vando.countArray([25, 37 , 40]);
+    const hitungArray = vando.countArray([1, 2 , 5]);
     console.log(hitungArray);
   } catch (error) {
     console.log(error.message);
   }
   // Failed
   try {
-    const hitungArray = vando.countArray(["25", "37" , "40"]);
+    const hitungArray = vando.countArray(["1", "2" , "5"]);
     console.log(hitungArray);
   } catch (error) {
     console.log(error.message);
