@@ -1,6 +1,6 @@
-import { manualMap, manualFilter } from "./tugas1.js";
-import { cetakTabel } from "./tugas2.js";
-import { countArray } from "./tugas3.js";
+import { manualMap, manualFilter } from "./1_manualMap_manualFilter.js";
+import { cetakTabel } from "./2_cetakTabel.js";
+import { countArray } from "./3_countArray.js";
 
 const func = {
   manualMap,
