@@ -3,7 +3,6 @@
  */
 
 import fakhri from "./tasks/fakhri/index.js";
-import angga from "./tasks/angga/index.js";
 
 console.log("===========================================");
 // Use IIFE here
@@ -119,6 +118,9 @@ console.log("===========================================");
   }
   
 })();
+
+import angga from "./tasks/angga/index.js";
+
 console.log("===========================================");
 (function taskAngga() {
   // Success Task 1a
