@@ -32,4 +32,6 @@ D.
 terjadi ketika property tersebut tidak pernah ada di dalam object tersebut atau tidak pernah di definisikan
 
 
-E. terjadi Infinite Loop di pada fungsi recursiveFunction
+E.  
+-pada fungsi recursivefunction file app.js, baris ke-10 kolom ke-3
+terjadi Infinite Loop di pada fungsi recursiveFunction
