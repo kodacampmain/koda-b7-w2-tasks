@@ -3,7 +3,7 @@
  */
 
 import fakhri from "./tasks/fakhri/index.js";
-import vando from "./tasks/rivando/index.js"
+import vando from "./tasks/rivando/index.js";
 
 console.log("===========================================");
 // Use IIFE here
@@ -113,7 +113,7 @@ console.log("===========================================");
   }
   // Failed
   try {
-    const countArray = naufal.countArray(['abc', 'a']);
+    const countArray = naufal.countArray(["abc", "a"]);
     console.log(countArray);
   } catch (error) {
     console.log(error.message);
