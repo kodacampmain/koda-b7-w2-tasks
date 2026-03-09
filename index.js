@@ -707,35 +707,30 @@ console.log("===========================================");
 
   (function akmalTask() {
   try {
-    const belanja = [24000, 11000, 30000];
-    const map = akmal.mapManual(belanja);
-    console.log(map);
-  } catch (error) {
-    console.log(error.message);
-  }
-    try {
-    const belanja = [24000, 11000,"saka"];
-    const map = akmal.mapManual(belanja);
-    console.log(map);
+    const angka = [1,2,3,4,5];
+    const diKaliDua = akmal.mapManual(angka, (num) => num *2);
+    console.log(diKaliDua);
   } catch (error) {
     console.log(error.message);
   }
   try {
-    const nilai = [
-  { nama: "Rendi", skor: 85 },
-  { nama: "Budi", skor: 50 },
-  { nama: "Cici", skor: 60 },
-  { nama: "Rudi", skor: 55 },
-  { nama: "Tasya", skor: 90 },
-  { nama: "lusi", skor: 92 }
-  ];
-    akmal.filterManual(nilai);
+    const angka = ["sama"];
+    const diKaliDua = akmal.mapManual(angka, (num) => num *2);
+    console.log(diKaliDua);
   } catch (error) {
     console.log(error.message);
   }
-    try {
-    const nilai =("abc");
-    akmal.filterManual(nilai);
+  try {
+    const angka = [1,2,3,4,5,6,7,8,9,10];
+    const angkaGanjil = akmal.filterManual(angka, (num) => num %2 !== 0 );
+    console.log(angkaGanjil);
+  } catch (error) {
+    console.log(error.message);
+  }  
+  try {
+    const angka = [1,2,3,4,"asds","asdd"];
+    const angkaGanjil = akmal.filterManual(angka, (num) => num %2 !== 0 );
+    console.log(angkaGanjil);
   } catch (error) {
     console.log(error.message);
   }
