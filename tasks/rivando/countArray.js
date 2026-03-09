@@ -7,7 +7,7 @@ export function countArray(arr){
 
 
   for (let i = 0; i < arr.length; i++) {
-    if (typeof arr[i] !== 'number' && Number.isNaN(arr[i])) {
+    if (typeof arr[i] !== "number" && Number.isNaN(arr[i])) {
       throw new Error(`Elemen pada indek ${i} bukan angka valid.`);
     }
     hasil *= arr[i];
